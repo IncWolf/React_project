@@ -13,7 +13,7 @@ class Services extends React.Component {
     render() {
         var services = this.props.services;
         return (<div>
-            <Link to={{pathname:'/service/1'}}>Нажми меня</Link>
+            <Link to='/services/service/1'>Нажми меня</Link>
             <div>{this.props.children}</div>
         </div>)
     }

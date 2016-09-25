@@ -6,7 +6,6 @@ var React = require('react');
 class Service extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props);
     }
     render() {
         return (<div>

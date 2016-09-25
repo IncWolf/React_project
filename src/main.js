@@ -46,7 +46,7 @@ ReactDOM.render(
 <Provider store={store}>
     <Router history={hashHistory}>
         <Route path="/" component={App}>
-            <Route path='service' component={Services}>
+            <Route path='services' component={Services}>
                 <Route path="service/:id" component={Service} />
             </Route>
         </Route>

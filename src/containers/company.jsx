@@ -35,7 +35,7 @@ class Company extends React.Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-6">
-                        <img src="src/img/2.jpg" style={{width: 100+'%'}} />
+                        {/*<img src="src/img/2.jpg" style={{width: 100+'%'}} />*/}
                     </div>
                     <div className="col-sm-6">
                         <div className="title"><h4>About Our Company</h4></div>

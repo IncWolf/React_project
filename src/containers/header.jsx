@@ -20,7 +20,7 @@ class Header extends React.Component {
                 <div className="container">
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span className="fa fa-bars"></span></button>
-                        <a className="navbar-brand" href="#"><img src="img/logo.png" />KET</a>
+                        <a className="navbar-brand" href="#">KET</a>
                     </div>
                     <NavMenu />
                 </div>

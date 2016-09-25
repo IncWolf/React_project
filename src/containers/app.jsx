@@ -21,7 +21,7 @@ class App extends React.Component {
 
         return( <div>
                 <Header />
-            {/*<Services  services={this.props.state.services} />*/}
+                <Services  services={this.props.state.services} />
                 <Company />
                 <p>Portfolio</p>
                 <p>Team</p>
