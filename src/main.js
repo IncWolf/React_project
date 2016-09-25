@@ -16,6 +16,7 @@ var combineReducers = redux.combineReducers;
 
 var appReducer = require('./reducers/appReducer');
 var companyReducer = require('./reducers/companyReducer');
+var portfolioReducer = require('./reducers/portfolioReducer');
 var App = require('./containers/app.jsx');
 var Services = require('./containers/services.jsx');
 var Service = require('./components/service.jsx');
@@ -34,7 +35,8 @@ var hashHistory = router.hashHistory;
 //const middleware = applyMiddleware(thunk);
 let allreducers = combineReducers({
     app: appReducer,
-    company: companyReducer
+    company: companyReducer,
+    portfolio: portfolioReducer
 });
 
 // store

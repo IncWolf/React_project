@@ -10,8 +10,9 @@ var connect = require('react-redux').connect;
 var Header = require('./header.jsx');
 var Services = require('./services.jsx');
 var Company = require('./company.jsx');
-
-
+var Portfolio = require('./portfolio.jsx');
+var Team = require('./team.jsx');
+var Achievements = require('./achievements.jsx');
 
 class App extends React.Component {
     constructor() {
@@ -23,8 +24,9 @@ class App extends React.Component {
                 <Header />
                 <Services  services={this.props.state.services} />
                 <Company />
-                <p>Portfolio</p>
-                <p>Team</p>
+                <Portfolio />
+                <Team />
+                <Achievements />
                 <p>News</p>
                 <p>Feedback</p>
                 <p>Contact</p>

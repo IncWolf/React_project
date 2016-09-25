@@ -6,4 +6,16 @@ export const changeCompanyTab = (id) => {
         type: 'CHANGE_COMPANY_TAB',
         payload: id
     }
-}
+};
+export const changeFilter = (category) => {
+    return {
+        type: 'CHANGE_FILTER',
+        payload: category
+    }
+};
+export const showMask = (id) => {
+    return {
+        type: 'SHOW_MASK',
+        payload: id
+    }
+};
