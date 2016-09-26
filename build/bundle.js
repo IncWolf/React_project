@@ -67,7 +67,7 @@
 	var portfolioReducer = __webpack_require__(201);
 	var App = __webpack_require__(202);
 	var Services = __webpack_require__(206);
-	var Service = __webpack_require__(286);
+	var Service = __webpack_require__(287);
 
 	// импорт зависимостей для настройки маршрутизации
 	var router = __webpack_require__(207);
@@ -23197,23 +23197,20 @@
 /* 199 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	/**
 	 * Created by galushkasergiy on 24.09.16.
 	 */
-	var servicedata = ['{"id":1,"title":"Web Design","src":"../img/1.png","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar lacus sit amet mi bibendum sodales. Nulla mi leo, elementum sit amet rutrum quis, posuere quis metus. Pellentesque in posuere neque, vitae euismod ipsum. Morbi vel tempus tellus. Sed ornare ultricies diam, quis dignissim odio vehicula vel. Morbi venenatis, erat eu commodo condimentum, orci urna sollicitudin neque, vitae iaculis risus sapien suscipit ligula. Donec sodales, velit eu gravida aliquet, nulla odio porttitor erat, at efficitur ante erat ut turpis. Integer scelerisque ipsum elit, at ultricies lorem placerat eget. Sed a ante lorem. Ut eu blandit dui. Quisque tortor sem, facilisis nec elementum ut, faucibus eu elit. Integer pellentesque nisl et ligula rutrum pellentesque. Quisque euismod leo et risus suscipit, vestibulum iaculis orci tristique. Sed non dignissim dolor, eu tincidunt orci. Ut at porttitor tellus. Morbi nec scelerisque lorem, ut accumsan enim."}', '{"id":2,"title":"Graphic Design","src":"../img/1.png","description":"Phasellus imperdiet ullamcorper eros, vitae laoreet nibh pharetra sed. In hac habitasse platea dictumst. Nunc at ex ante. Fusce sodales, odio sit amet laoreet sodales, ligula eros dignissim mi, sit amet sodales nisi libero vitae lorem. Quisque tellus magna, malesuada vitae sem nec, vulputate pellentesque purus. Sed lacinia ligula arcu, vitae scelerisque dui scelerisque et. Curabitur auctor convallis enim, quis elementum dolor iaculis interdum."}', '{"id":3,"title":"Online Support","src":"../img/1.png","description":"Suspendisse bibendum, metus id pretium sodales, mauris enim sodales enim, nec fermentum neque sem non tortor. Aenean iaculis congue scelerisque. Nunc at fermentum ipsum, et vestibulum odio. Sed vitae molestie orci. Fusce imperdiet nulla id molestie interdum. Nam at ipsum nunc. Morbi in tincidunt lectus. Mauris interdum dolor lacus, sit amet iaculis sem vestibulum placerat."}', '{"id":4,"title":"App Design","src":"../img/1.png","description":"Nam mauris mi, mollis quis eleifend sit amet, imperdiet sit amet enim. Sed ut maximus diam. Quisque vitae condimentum orci, at accumsan augue. Sed mattis odio id risus feugiat vulputate. Sed vel tellus malesuada, consequat tellus at, dignissim dolor. Nam viverra aliquet tempus. Sed aliquam elementum ultricies."}', '{"id":5,"title":"Online Marketing","src":"../img/1.png","description":"Quisque porttitor augue et placerat facilisis. Morbi quam arcu, imperdiet ac est vitae, ultrices iaculis ex. Aliquam erat volutpat. Cras viverra luctus sem eget pretium. Vestibulum cursus ligula quis sapien tempor, quis mattis magna interdum. Pellentesque iaculis iaculis ante id aliquam. Maecenas vitae porttitor dolor. Pellentesque vitae leo lacus. Ut cursus ultricies mauris nec semper. Ut vel lectus ante. Aliquam nisi nunc, egestas fermentum dolor vel, tempor vestibulum dolor. Quisque euismod maximus arcu ut finibus. Sed nulla nisl, porta id mi at, egestas ultricies nulla. Aliquam tincidunt ligula a sapien rhoncus blandit. Maecenas venenatis turpis at ipsum imperdiet, ac malesuada sapien tincidunt."}', '{"id":6,"title":"Seo Service","src":"../img/1.png","description":"Duis feugiat consectetur lorem, non elementum massa fermentum sed. In facilisis tellus sem, sed pretium odio iaculis posuere. Praesent efficitur scelerisque justo, ornare viverra leo condimentum non. Aliquam libero justo, iaculis hendrerit erat ut, fermentum condimentum augue. Duis cursus ipsum rutrum mattis mattis. Praesent vulputate sapien semper magna aliquam, eget suscipit lacus mollis. Aenean ut purus quam. Sed ex orci, aliquet et orci vitae, scelerisque ullamcorper dui. Sed eu ipsum nec dolor venenatis cursus ut quis leo."}'];
+	var services = [{ id: 1, title: "Web Design", src: "../img/1.png", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar lacus sit amet mi bibendum sodales. Nulla mi leo, elementum sit amet rutrum quis, posuere quis metus. Pellentesque in posuere neque, vitae euismod ipsum. Morbi vel tempus tellus. Sed ornare ultricies diam, quis dignissim odio vehicula vel. Morbi venenatis, erat eu commodo condimentum, orci urna sollicitudin neque, vitae iaculis risus sapien suscipit ligula. Donec sodales, velit eu gravida aliquet, nulla odio porttitor erat, at efficitur ante erat ut turpis. Integer scelerisque ipsum elit, at ultricies lorem placerat eget. Sed a ante lorem. Ut eu blandit dui. Quisque tortor sem, facilisis nec elementum ut, faucibus eu elit. Integer pellentesque nisl et ligula rutrum pellentesque. Quisque euismod leo et risus suscipit, vestibulum iaculis orci tristique. Sed non dignissim dolor, eu tincidunt orci. Ut at porttitor tellus. Morbi nec scelerisque lorem, ut accumsan enim." }, { id: 2, title: "Graphic Design", src: "../img/1.png", description: "Phasellus imperdiet ullamcorper eros, vitae laoreet nibh pharetra sed. In hac habitasse platea dictumst. Nunc at ex ante. Fusce sodales, odio sit amet laoreet sodales, ligula eros dignissim mi, sit amet sodales nisi libero vitae lorem. Quisque tellus magna, malesuada vitae sem nec, vulputate pellentesque purus. Sed lacinia ligula arcu, vitae scelerisque dui scelerisque et. Curabitur auctor convallis enim, quis elementum dolor iaculis interdum." }, { id: 3, title: "Online Support", src: "../img/1.png", description: "Suspendisse bibendum, metus id pretium sodales, mauris enim sodales enim, nec fermentum neque sem non tortor. Aenean iaculis congue scelerisque. Nunc at fermentum ipsum, et vestibulum odio. Sed vitae molestie orci. Fusce imperdiet nulla id molestie interdum. Nam at ipsum nunc. Morbi in tincidunt lectus. Mauris interdum dolor lacus, sit amet iaculis sem vestibulum placerat." }, { id: 4, title: "App Design", src: "../img/1.png", description: "Nam mauris mi, mollis quis eleifend sit amet, imperdiet sit amet enim. Sed ut maximus diam. Quisque vitae condimentum orci, at accumsan augue. Sed mattis odio id risus feugiat vulputate. Sed vel tellus malesuada, consequat tellus at, dignissim dolor. Nam viverra aliquet tempus. Sed aliquam elementum ultricies." }, { id: 5, title: "Online Marketing", src: "../img/1.png", description: "Quisque porttitor augue et placerat facilisis. Morbi quam arcu, imperdiet ac est vitae, ultrices iaculis ex. Aliquam erat volutpat. Cras viverra luctus sem eget pretium. Vestibulum cursus ligula quis sapien tempor, quis mattis magna interdum. Pellentesque iaculis iaculis ante id aliquam. Maecenas vitae porttitor dolor. Pellentesque vitae leo lacus. Ut cursus ultricies mauris nec semper. Ut vel lectus ante. Aliquam nisi nunc, egestas fermentum dolor vel, tempor vestibulum dolor. Quisque euismod maximus arcu ut finibus. Sed nulla nisl, porta id mi at, egestas ultricies nulla. Aliquam tincidunt ligula a sapien rhoncus blandit. Maecenas venenatis turpis at ipsum imperdiet, ac malesuada sapien tincidunt." }, { id: 6, title: "Seo Service", src: "../img/1.png", description: "Duis feugiat consectetur lorem, non elementum massa fermentum sed. In facilisis tellus sem, sed pretium odio iaculis posuere. Praesent efficitur scelerisque justo, ornare viverra leo condimentum non. Aliquam libero justo, iaculis hendrerit erat ut, fermentum condimentum augue. Duis cursus ipsum rutrum mattis mattis. Praesent vulputate sapien semper magna aliquam, eget suscipit lacus mollis. Aenean ut purus quam. Sed ex orci, aliquet et orci vitae, scelerisque ullamcorper dui. Sed eu ipsum nec dolor venenatis cursus ut quis leo." }];
 	var teamdata = ['{"name": "John Doe", "position": "Graphic Designer"}', '{"name": "John Doe", "position": "Graphic Designer"}', '{"name": "John Doe", "position": "Graphic Designer"}', '{"name": "John Doe", "position": "Graphic Designer"}'];
-	var services = [];
 	var team = [];
-	for (var i = 0; i < servicedata.length; i++) {
-	    services[i] = JSON.parse(servicedata[i]);
-	}
-	for (var _i = 0; _i < teamdata.length; _i++) {
-	    team[_i] = JSON.parse(teamdata[_i]);
+	var achievements = [{ icon: 'src/img/1.png', max: 4609, title: 'Works' }, { icon: 'src/img/2.png', max: 3470, title: 'Customers' }, { icon: 'src/img/3.png', max: 2908, title: 'Purchase' }, { icon: 'src/img/4.png', max: 1908, title: 'Office' }];
+	for (var i = 0; i < teamdata.length; i++) {
+	    team[i] = JSON.parse(teamdata[i]);
 	}
 	var appReducer = function appReducer() {
-	    var state = arguments.length <= 0 || arguments[0] === undefined ? { services: services, team: team } : arguments[0];
+	    var state = arguments.length <= 0 || arguments[0] === undefined ? { services: services, team: team, achievements: achievements } : arguments[0];
 	    var action = arguments[1];
 
 	    switch (action.type) {
@@ -23329,6 +23326,8 @@
 	var Company = __webpack_require__(270);
 	var Portfolio = __webpack_require__(282);
 	var Team = __webpack_require__(284);
+	var Achievements = __webpack_require__(286);
+	var Service = __webpack_require__(287);
 
 	var App = function (_React$Component) {
 	    _inherits(App, _React$Component);
@@ -23347,10 +23346,15 @@
 	                'div',
 	                null,
 	                React.createElement(Header, null),
-	                React.createElement(Services, { services: this.props.state.services }),
+	                React.createElement(
+	                    Services,
+	                    { services: this.props.state.services },
+	                    React.createElement(Service, null)
+	                ),
 	                React.createElement(Company, null),
 	                React.createElement(Portfolio, null),
 	                React.createElement(Team, null),
+	                React.createElement(Achievements, null),
 	                React.createElement(
 	                    'p',
 	                    null,
@@ -23448,7 +23452,21 @@
 	                            React.createElement(
 	                                'a',
 	                                { className: 'navbar-brand', href: '#' },
-	                                'KET'
+	                                React.createElement(
+	                                    'div',
+	                                    { className: 'logo' },
+	                                    React.createElement(
+	                                        'div',
+	                                        null,
+	                                        'H'
+	                                    )
+	                                ),
+	                                'the',
+	                                React.createElement(
+	                                    'span',
+	                                    { className: 'green' },
+	                                    'Ham'
+	                                )
 	                            )
 	                        ),
 	                        React.createElement(NavMenu, null)
@@ -23469,6 +23487,70 @@
 	                            'a',
 	                            { href: '#', className: 'btn btn-custom light' },
 	                            'START TOUR'
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'container-fluid options' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'row text-center' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'col-md-3' },
+	                            React.createElement(
+	                                'div',
+	                                { className: 'image_wrapper' },
+	                                React.createElement('img', { src: 'src/img/pers_opt.png' })
+	                            ),
+	                            React.createElement(
+	                                'div',
+	                                null,
+	                                'PERSONALIZED OPTIONS'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { className: 'col-md-3' },
+	                            React.createElement(
+	                                'div',
+	                                { className: 'image_wrapper' },
+	                                React.createElement('img', { src: 'src/img/full_cust.png' })
+	                            ),
+	                            React.createElement(
+	                                'div',
+	                                null,
+	                                'FULLY CUSTOMIZABLE'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { className: 'col-md-3' },
+	                            React.createElement(
+	                                'div',
+	                                { className: 'image_wrapper' },
+	                                React.createElement('img', { src: 'src/img/unl_supp.png' })
+	                            ),
+	                            React.createElement(
+	                                'div',
+	                                null,
+	                                'UNLIMITED SUPPORT'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { className: 'col-md-3' },
+	                            React.createElement(
+	                                'div',
+	                                { className: 'image_wrapper' },
+	                                React.createElement('img', { src: 'src/img/resp_dev.png' })
+	                            ),
+	                            React.createElement(
+	                                'div',
+	                                null,
+	                                'RESPONSIBLE ALL DEVICE'
+	                            )
 	                        )
 	                    )
 	                )
@@ -23583,7 +23665,16 @@
 	                        React.createElement(
 	                            "a",
 	                            { href: "#" },
-	                            "SERVICES"
+	                            "ABOUT"
+	                        )
+	                    ),
+	                    React.createElement(
+	                        "li",
+	                        null,
+	                        React.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "SERVICE"
 	                        )
 	                    ),
 	                    React.createElement(
@@ -23601,7 +23692,7 @@
 	                        React.createElement(
 	                            "a",
 	                            { href: "#" },
-	                            "ABOUT"
+	                            "TESTIMONIAL"
 	                        )
 	                    ),
 	                    React.createElement(
@@ -23610,7 +23701,16 @@
 	                        React.createElement(
 	                            "a",
 	                            { href: "#" },
-	                            "CLIENTS"
+	                            "BLOG"
+	                        )
+	                    ),
+	                    React.createElement(
+	                        "li",
+	                        null,
+	                        React.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "TEAM"
 	                        )
 	                    ),
 	                    React.createElement(
@@ -23652,6 +23752,7 @@
 	var React = __webpack_require__(1);
 
 	var Link = __webpack_require__(207).Link;
+	var bindActionCreators = __webpack_require__(179).bindActionCreators;
 	var connect = __webpack_require__(172).connect;
 
 	var Services = function (_React$Component) {
@@ -23666,15 +23767,16 @@
 	    _createClass(Services, [{
 	        key: 'render',
 	        value: function render() {
-	            var services = this.props.services;
 	            return React.createElement(
 	                'div',
 	                null,
-	                React.createElement(
-	                    Link,
-	                    { to: '/services/service/1' },
-	                    'Нажми меня'
-	                ),
+	                this.props.services.map(function (service) {
+	                    return React.createElement(
+	                        Link,
+	                        { to: { pathname: '/services/service/' + service.id } },
+	                        service.title
+	                    );
+	                }),
 	                React.createElement(
 	                    'div',
 	                    null,
@@ -23686,8 +23788,21 @@
 
 	    return Services;
 	}(React.Component);
+	// связывание состояния приложения с React компонентом
 
-	module.exports = Services;
+
+	function mapStateToProps(state) {
+	    return {
+	        services: state.app.services
+	    };
+	}
+
+	// связывание функции действия deleteUser со свойством React компонента deleteUser
+	function matchDispatchToProps(dispatch) {
+	    return bindActionCreators({}, dispatch);
+	}
+
+	module.exports = connect(mapStateToProps, matchDispatchToProps)(Services);
 
 /***/ },
 /* 207 */
@@ -30635,9 +30750,6 @@
 	/**
 	 * Created by Incy on 25.09.2016.
 	 */
-	/**
-	 * Created by galushkasergiy on 24.09.16.
-	 */
 	var React = __webpack_require__(1);
 	var bindActionCreators = __webpack_require__(179).bindActionCreators;
 	var connect = __webpack_require__(172).connect;
@@ -30989,6 +31101,91 @@
 
 /***/ },
 /* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Created by Incy on 25.09.2016.
+	 */
+	var React = __webpack_require__(1);
+	var bindActionCreators = __webpack_require__(179).bindActionCreators;
+	var connect = __webpack_require__(172).connect;
+
+	var actions = __webpack_require__(281);
+
+	var Achievements = function (_React$Component) {
+	    _inherits(Achievements, _React$Component);
+
+	    function Achievements(props) {
+	        _classCallCheck(this, Achievements);
+
+	        return _possibleConstructorReturn(this, (Achievements.__proto__ || Object.getPrototypeOf(Achievements)).call(this, props));
+	    }
+
+	    _createClass(Achievements, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                'div',
+	                { className: 'container-fluid reverse text-center' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        this.props.achievements.map(function (item, i) {
+	                            React.createElement(
+	                                'div',
+	                                { key: i, className: 'col-md-3 col-sm-6 col-xs-12' },
+	                                React.createElement(
+	                                    'div',
+	                                    null,
+	                                    React.createElement(
+	                                        'div',
+	                                        null,
+	                                        React.createElement('img', { src: item.icon })
+	                                    ),
+	                                    React.createElement('h4', { 'data-counter': item.max }),
+	                                    React.createElement(
+	                                        'p',
+	                                        null,
+	                                        item.title
+	                                    )
+	                                )
+	                            );
+	                        })
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Achievements;
+	}(React.Component);
+
+	// связывание состояния приложения с React компонентом
+
+
+	function mapStateToProps(state) {
+	    return {
+	        achievements: state.app.achievements
+	    };
+	}
+
+	module.exports = connect(mapStateToProps)(Achievements);
+
+/***/ },
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

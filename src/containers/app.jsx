@@ -13,6 +13,7 @@ var Company = require('./company.jsx');
 var Portfolio = require('./portfolio.jsx');
 var Team = require('./team.jsx');
 var Achievements = require('./achievements.jsx');
+var Service = require('../components/service.jsx');
 
 class App extends React.Component {
     constructor() {
@@ -22,7 +23,7 @@ class App extends React.Component {
 
         return( <div>
                 <Header />
-                <Services  services={this.props.state.services} />
+                <Services  services={this.props.state.services}><Service /></Services>
                 <Company />
                 <Portfolio />
                 <Team />

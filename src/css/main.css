@@ -1,0 +1,111 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.hide {display: none;}
+span.green {color: #18cfab;}
+.max80 {width: 80%;}
+.max90 {width: 90%;}
+.max75 {width: 75%;}
+.max94 {width: 94%;}
+.max87 {width: 87%;}
+.max80-appear, .max90-appear, .max75-appear, .max94-appear, .max87-appear {
+    width:0;
+}
+.max80-appear.max80-appear-active {width: 80%; transition: width 3s ease-in;}
+.max90-appear.max90-appear-active {width: 90%; transition: width 3s ease-in;}
+.max75-appear.max75-appear-active {width: 75%; transition: width 3s ease-in;}
+.max94-appear.max94-appear-active {width: 94%; transition: width 3s ease-in;}
+.max87-appear.max87-appear-active {width: 87%; transition: width 3s ease-in;}
+
+/*Стили для компонента Header*/
+.navbar {
+    background: #43423d;
+}
+.navbar .container {
+    height: 120px;
+}
+.navbar .logo {
+    width: 60px;
+    height: 34px;
+    font-size: 40px;
+    background: #18cfab;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.navbar .logo:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 15px solid #18cfab;
+}
+.navbar .logo:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 15px solid #18cfab;
+}
+.navbar .logo>div {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -15px;
+}
+.navbar-nav>li>a {
+    padding-top: 22px;
+    padding-bottom: 15px;
+}
+.navbar a {
+    color: #ffffff;
+}
+.navbar-header, #myNavbar .nav>li {
+    padding-top: 25px;
+}
+#myNavbar {
+    height:100% !important;
+}
+#myNavbar .nav, #myNavbar .nav>li {
+    height: 100%;
+}
+.jumbotron {
+    height: 1020px;
+    background: #3c3c3c;
+    margin-bottom: 0;
+}
+.options>.row>div {
+    height:370px;
+}
+.options>.row>div:nth-child(2n) {
+    background: #18cfab;
+    border: solid #ffffff;
+    border-width: 8px 0 0;
+    color: #ffffff;
+}
+.options>.row>div:nth-child(2n-1) {
+    background: #1c2a33;
+    border: solid #18cfab;
+    border-width: 8px 0 0;
+    color: #18cfab;
+}
+.options>.row>div {
+    height:370px;
+    padding-top: 100px;
+    padding-bottom: 110px;
+    font-size: 20px;
+}
+.options>.row>div>.image_wrapper {
+    height: 130px;
+}
