@@ -12,7 +12,7 @@ class Team extends React.Component {
         return (<div className="container-fluid text-center">
             <div className="wrapper">
                 <div className="title">
-                    <h4>Meet Our Team</h4>
+                    <p>Meet Our Team</p>
                 </div>
                 <div className="row">
                     {this.props.team.map((member, i) => {

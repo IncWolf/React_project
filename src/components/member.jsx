@@ -17,8 +17,8 @@ class Member extends React.Component {
                     <div className="social-btns">
                         <div className="facebook"><span className="fa fa-facebook"></span></div>
                         <div className="twitter"><span className="fa fa-twitter"></span></div>
-                        <div className="google"><span className="fa fa-google"></span></div>
-                        <div className="dribble"><span className="fa fa-dribbble"></span></div>
+                        <div className="google"><span className="fa fa-skype"></span></div>
+                        <div className="dribble"><span className="fa fa-vimeo"></span></div>
                     </div>
                 </div>
             </div>

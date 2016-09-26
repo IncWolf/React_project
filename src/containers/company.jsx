@@ -32,14 +32,14 @@ class Company extends React.Component {
                 break;
         }
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="company">
                 <div className="row">
                     <div className="col-sm-6">
-                        {/*<img src="src/img/2.jpg" style={{width: 100+'%'}} />*/}
+                        <img src="src/img/2.jpg" style={{width: 100+'%'}}  />
                     </div>
-                    <div className="col-sm-6">
-                        <div className="title"><h4>About Our Company</h4></div>
-                        <div><ul style={{listType: 'none'}} onClick={this.clickHandler}><li className={this.props.activeTab == 0?'active':null} data-tab="0" style={{float: 'left'}}>OUR HISTORY</li><li className={this.props.activeTab == 1?'active':null} data-tab="1" style={{float: 'left'}}>OUR BIOGRAPHY</li><li className={this.props.activeTab == 2?'active':null} data-tab="2" style={{float: 'left'}}>OUR SKILLS</li></ul></div>
+                    <div className="col-sm-4">
+                        <div className="title"><p>About Our Company</p></div>
+                        <div><ul className="menu" onClick={this.clickHandler}><li className={this.props.activeTab == 0?'active':null} data-tab="0">OUR HISTORY</li><li className={this.props.activeTab == 1?'active':null} data-tab="1" style={{float: 'left'}}>OUR BIOGRAPHY</li><li className={this.props.activeTab == 2?'active':null} data-tab="2" style={{float: 'left'}}>OUR SKILLS</li></ul></div>
                         {showedTab}
                     </div>
                 </div>

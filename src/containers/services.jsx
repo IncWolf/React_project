@@ -17,20 +17,21 @@ class Services extends React.Component {
                 <div className="wrapper">
                     <div className="row">
                         <div className="title">
-                            <h4>Our Services</h4>
+                            <p>Our Services</p>
                         </div>
-                        <div className="col-md-12">
-                            {this.props.services.map((service) => {
-                                return(<Link to={{pathname: 'services/service/'+service.id, query: {src: service.src, description: service.description}}} activeClassName="active">{service.title}</Link>)
-                            })}
-                            <div>{this.props.children}</div>
+                        <div className="col-md-12 servicetabs">
+                            {this.props.services.map((service, i) => {
+                                return(<Link key={i} to={{pathname: 'service/'+service.id}} activeClassName="active"><div>{service.title}</div></Link>)
+                                })}
                         </div>
+                        <div className="col-md-12 serviceinfo text-left">{this.props.children}</div>
                     </div>
                 </div>
             </div>
         )
     }
 }
+
 // связывание состояния приложения с React компонентом
 function mapStateToProps(state) {
     return {
@@ -44,5 +45,4 @@ function matchDispatchToProps(dispatch) {
 
     }, dispatch)
 }
-
 module.exports = connect(mapStateToProps, matchDispatchToProps)(Services);

@@ -9,14 +9,14 @@ class PhotoList extends React.Component {
     }
     render() {
         return (
-            <div className="photo-wrapper">
+            <div className="photo-wrapper row">
                 {this.props.photos.map((photo) => {
                     return(
-                        <div key={photo.id} data-id={photo.id} onMouseEnter={this.props.enterHandler} onMouseLeave={this.props.leaveHandler}>
+                        <div className="col-md-3" key={photo.id} data-id={photo.id} onMouseEnter={this.props.enterHandler} onMouseLeave={this.props.leaveHandler}>
                             <img src={photo.src} />
                             <div className="mask" style={this.props.showMask == photo.id.toString()?{display: 'block'}:{display: 'none'}}>
-                                <p style={{fontSize: '25px'}}>{photo.title}</p>
-                                <p style={{fontSize: '16px'}}>{photo.category}</p>
+                                <div><p style={{fontSize: '24px', color: '#18cfab'}}>{photo.title}</p>
+                                <p style={{fontSize: '21px'}}>{photo.category}</p></div>
                             </div>
                         </div>
                     )

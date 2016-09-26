@@ -44,15 +44,4 @@ const store = createStore(allreducers);
 
 // инициализация асинхронной загрузки данных
 //store.dispatch(fetchUsers());
-ReactDOM.render(
-<Provider store={store}>
-    <Router history={hashHistory}>
-        <Route path="/" component={App}>
-            <Route path='services' component={Services}>
-                <Route path="service/:id" component={Service} />
-            </Route>
-        </Route>
-    </Router>
-    </Provider>,
-    document.getElementById('output')
-);
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('output'));

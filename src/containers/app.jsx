@@ -8,12 +8,12 @@ var connect = require('react-redux').connect;
 //var actions = require('../actions/actions');
 
 var Header = require('./header.jsx');
-var Services = require('./services.jsx');
+
 var Company = require('./company.jsx');
 var Portfolio = require('./portfolio.jsx');
 var Team = require('./team.jsx');
 var Achievements = require('./achievements.jsx');
-var Service = require('../components/service.jsx');
+var ServicesWrapper = require('./servicesWrapper.jsx');
 
 class App extends React.Component {
     constructor() {
@@ -23,7 +23,7 @@ class App extends React.Component {
 
         return( <div>
                 <Header />
-                <Services><Service /></Services>
+                <ServicesWrapper />
                 <Company />
                 <Portfolio />
                 <Team />

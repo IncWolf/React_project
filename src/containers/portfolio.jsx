@@ -25,14 +25,14 @@ class Portfolio extends React.Component {
     }
     render() {
         return (
-            <div className="container-fluid text-center">
+            <div className="container-fluid text-center" id="portfolio">
                 <div className="wrapper">
                     <div className="row">
                         <div className="title">
-                            <h4>Our Amazing Work</h4>
+                            <p>Our Amazing Work</p>
                         </div>
                         <div className="col-md-12" onClick={this.clickHandler}>
-                            <div data-filter="ALL" className={this.props.activeFilterTab == 'ALL'?'active':null}>All</div><div data-filter="GRAPHIC" className={this.props.activeFilterTab == 'GRAPHIC'?'active':null}>Graphic Design</div><div data-filter="WEB" className={this.props.activeFilterTab == 'WEB'?'active':null}>Web Design</div><div data-filter="LANDING" className={this.props.activeFilterTab == 'LANDING'?'active':null}>Landing Pages</div><div data-filter="WORDPRESS" className={this.props.activeFilterTab == 'WORDPRESS'?'active':null}>Wordpress</div>
+                            <ul className="menu"><li data-filter="ALL" className={this.props.activeFilterTab == 'ALL'?'active':null}>All</li><li data-filter="GRAPHIC" className={this.props.activeFilterTab == 'GRAPHIC'?'active':null}>Graphic Design</li><li data-filter="WEB" className={this.props.activeFilterTab == 'WEB'?'active':null}>Web Design</li><li data-filter="LANDING" className={this.props.activeFilterTab == 'LANDING'?'active':null}>Landing Pages</li><li data-filter="WORDPRESS" className={this.props.activeFilterTab == 'WORDPRESS'?'active':null}>Wordpress</li></ul>
                         </div>
                         <div className="col-md-12" id="photo_container">
                             <PhotoList photos={this.props.photos} showMask={this.props.mask} enterHandler={this.mouseEnterHandler} leaveHandler={this.mouseLeaveHandler}/>

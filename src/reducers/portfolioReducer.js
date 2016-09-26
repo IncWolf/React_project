@@ -26,8 +26,12 @@ const portfolioReducer = (state={photos, activeFilterTab: 'ALL'}, action) => {
         case 'CHANGE_FILTER':
             var filtered_photos = [];
             for (var i=0; i<photos.length; i++ ) {
-                if (photos[i].category == action.payload) {
-                    filtered_photos.push(photos[i]);
+                if (action.payload != 'ALL') {
+                    if (photos[i].category == action.payload) {
+                        filtered_photos.push(photos[i]);
+                    }
+                } else {
+                    filtered_photos = photos;
                 }
             }
             let newState = {...state, photos: filtered_photos, activeFilterTab: action.payload};

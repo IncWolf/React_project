@@ -16,6 +16,18 @@ span.green {color: #18cfab;}
 .max75-appear.max75-appear-active {width: 75%; transition: width 3s ease-in;}
 .max94-appear.max94-appear-active {width: 94%; transition: width 3s ease-in;}
 .max87-appear.max87-appear-active {width: 87%; transition: width 3s ease-in;}
+.title {
+    font-size: 36px;
+    margin-bottom: 80px;
+}
+.container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 /*Стили для компонента Header*/
 .navbar {
@@ -109,3 +121,152 @@ span.green {color: #18cfab;}
 .options>.row>div>.image_wrapper {
     height: 130px;
 }
+.options.container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*Стили для компонента Services*/
+.servicetabs {
+    margin-bottom: 30px;
+}
+.servicetabs>a>div {
+    display: inline-block;
+    width: 180px;
+    height: 72px;
+    padding: 25px 0;
+    font-size: 17px;
+    background: #f8fcfe;
+    color: rgb(113,113,113);
+}
+.servicetabs>a.active {
+    position: relative;
+}
+.servicetabs>a.active>div {
+    background: #18cfab;
+    color: #ffffff;
+}
+.servicetabs>a.active:after {
+    border-top: 10px solid #18cfab;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 50%;
+    content: '';
+    top: 43px;
+    margin-left: -10px;
+    position: absolute;
+}
+.serviceinfo>div {
+    height: 137px;
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.serviceinfo img{
+    height: 137px;
+    width:190px;
+    background-color:#3c3c3c;
+    margin-right:10px;
+    float:left;
+}
+
+/*Стили для компонента Company*/
+#company {
+    background: #1f2428;
+    color: #ffffff;
+}
+#company .menu {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+}
+#company .menu>li {
+    float:left;
+    padding-top:10px;
+    padding-bottom: 50px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+#company .menu>li.active {
+    border-top: 2px solid #18cfab;
+    color: #18cfab;
+}
+.progress {
+    height: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 2px rgba(255,255,255,1);
+    box-shadow: 0px 0px 2px rgba(255,255,255,1);
+}
+.progress-bar>div {
+    position:absolute;
+    left:15px;
+}
+.progress-bar.violet {
+    background-color: #9c5da5;
+}
+.progress-bar.blue {
+    background-color: #11b0de;
+}
+.progress-bar.pink {
+    background-color: #d67f7f;
+}
+.progress-bar.green {
+    background-color: #20bc9d;
+}
+.progress-bar.brown {
+    background-color: #bb8a36;
+}
+
+/*Стили для компонента Portfolio*/
+#portfolio {
+    background: #f8fcfe;
+}
+
+#portfolio .menu {
+    list-style: none;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 610px;
+}
+
+#portfolio .menu>li {
+    float:left;
+    padding:18px;
+    background: #ffffff;
+    cursor: pointer;
+}
+#portfolio .menu>li.active {
+    border-top: 2px solid #18cfab;
+    color: #18cfab;
+}
+.photo-wrapper {
+    margin-top: 70px;
+}
+.photo-wrapper>div {
+    height: 200px;
+    position:relative;
+    background: #8a8a8a;
+}
+.photo-wrapper>div:nth-child(1), .photo-wrapper>div:nth-child(3),
+.photo-wrapper>div:nth-child(6), .photo-wrapper>div:nth-child(8),
+.photo-wrapper>div:nth-child(9), .photo-wrapper>div:nth-child(11) {
+    background: #24413e;
+}
+
+.photo-wrapper>div>.mask {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 65px 0;
+    border-top:3px solid #18cfab;
+    opacity: 0.9;
+}
+
+/*Стили для компонента Team*/
