@@ -8,8 +8,9 @@ class Service extends React.Component {
         super(props);
     }
     render() {
+        console.log(this.props.location);
         return (<div>
-            Текст
+
         </div>)
     }
 }

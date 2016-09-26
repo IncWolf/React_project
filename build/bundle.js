@@ -23348,7 +23348,7 @@
 	                React.createElement(Header, null),
 	                React.createElement(
 	                    Services,
-	                    { services: this.props.state.services },
+	                    null,
 	                    React.createElement(Service, null)
 	                ),
 	                React.createElement(Company, null),
@@ -23769,18 +23769,39 @@
 	        value: function render() {
 	            return React.createElement(
 	                'div',
-	                null,
-	                this.props.services.map(function (service) {
-	                    return React.createElement(
-	                        Link,
-	                        { to: { pathname: '/services/service/' + service.id } },
-	                        service.title
-	                    );
-	                }),
+	                { className: 'container-fluid text-center' },
 	                React.createElement(
 	                    'div',
-	                    null,
-	                    this.props.children
+	                    { className: 'wrapper' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'title' },
+	                            React.createElement(
+	                                'h4',
+	                                null,
+	                                'Our Services'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { className: 'col-md-12' },
+	                            this.props.services.map(function (service) {
+	                                return React.createElement(
+	                                    Link,
+	                                    { to: { pathname: 'services/service/' + service.id, query: { src: service.src, description: service.description } }, activeClassName: 'active' },
+	                                    service.title
+	                                );
+	                            }),
+	                            React.createElement(
+	                                'div',
+	                                null,
+	                                this.props.children
+	                            )
+	                        )
+	                    )
 	                )
 	            );
 	        }
@@ -31215,11 +31236,8 @@
 	    _createClass(Service, [{
 	        key: 'render',
 	        value: function render() {
-	            return React.createElement(
-	                'div',
-	                null,
-	                'Текст'
-	            );
+	            console.log(this.props.location);
+	            return React.createElement('div', null);
 	        }
 	    }]);
 

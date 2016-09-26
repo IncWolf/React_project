@@ -23,7 +23,7 @@ class App extends React.Component {
 
         return( <div>
                 <Header />
-                <Services  services={this.props.state.services}><Service /></Services>
+                <Services><Service /></Services>
                 <Company />
                 <Portfolio />
                 <Team />

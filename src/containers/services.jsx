@@ -12,11 +12,23 @@ class Services extends React.Component {
         super(props);
     }
     render() {
-        return (<div>{this.props.services.map((service) => {
-            return(<Link to={{pathname: '/services/service/'+service.id}}>{service.title}</Link>)
-        })}
-            <div>{this.props.children}</div>
-        </div>)
+        return (
+            <div className="container-fluid text-center">
+                <div className="wrapper">
+                    <div className="row">
+                        <div className="title">
+                            <h4>Our Services</h4>
+                        </div>
+                        <div className="col-md-12">
+                            {this.props.services.map((service) => {
+                                return(<Link to={{pathname: 'services/service/'+service.id, query: {src: service.src, description: service.description}}} activeClassName="active">{service.title}</Link>)
+                            })}
+                            <div>{this.props.children}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
     }
 }
 // связывание состояния приложения с React компонентом
