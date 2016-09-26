@@ -9,9 +9,9 @@ class Member extends React.Component {
             <div className="col-md-3 col-sm-6 col-xs-12">
                 <div className="general_information">
                     <div className="image-wrapper">
-                        <div className="image-caption">
-                            <h4>{this.props.member.name}</h4>
-                            <p>{this.props.member.position}</p>
+                        <div className="image-caption text-left">
+                            <p style={{fontSize: '16px'}}>{this.props.member.name}</p>
+                            <p style={{fontSize: '13px', color: '#18cfab'}}>{this.props.member.position}</p>
                         </div>
                     </div>
                     <div className="social-btns">

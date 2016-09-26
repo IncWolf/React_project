@@ -19,3 +19,9 @@ export const showMask = (id) => {
         payload: id
     }
 };
+export const changeNumberValue = (array) => {
+    return {
+        type: 'CHANGE_CURRENT_VALUE',
+        payload: array
+    }
+};

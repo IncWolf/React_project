@@ -17,18 +17,9 @@ var combineReducers = redux.combineReducers;
 var appReducer = require('./reducers/appReducer');
 var companyReducer = require('./reducers/companyReducer');
 var portfolioReducer = require('./reducers/portfolioReducer');
+var achievementsReducer = require('./reducers/achievementsReducer');
+
 var App = require('./containers/app.jsx');
-var Services = require('./containers/services.jsx');
-var Service = require('./components/service.jsx');
-
-// импорт зависимостей для настройки маршрутизации
-var router = require('react-router');
-
-var Router = router.Router;
-var Route = router.Route;
-var Link = router.Link;
-var IndexRoute = router.IndexRoute;
-var hashHistory = router.hashHistory;
 
 //var fetchUsers = require('./actions/async').fetchUsers;
 
@@ -36,7 +27,8 @@ var hashHistory = router.hashHistory;
 let allreducers = combineReducers({
     app: appReducer,
     company: companyReducer,
-    portfolio: portfolioReducer
+    portfolio: portfolioReducer,
+    achievements: achievementsReducer
 });
 
 // store

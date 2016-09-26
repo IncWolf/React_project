@@ -15,7 +15,7 @@ class ServicesWrapper extends React.Component {
     render() {
         return (
             <Router history={hashHistory}>
-                <Route path='/' component={Services}>
+                <Route component={Services}>
                     <Route path="service/:id" component={Service} />
                 </Route>
             </Router>

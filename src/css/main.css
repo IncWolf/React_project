@@ -1,6 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
 .hide {display: none;}
 span.green {color: #18cfab;}
 .max80 {width: 80%;}
@@ -270,3 +274,116 @@ span.green {color: #18cfab;}
 }
 
 /*Стили для компонента Team*/
+#team .image-wrapper {
+    height: 300px;
+    background-color: #ebebeb;
+    position:relative;
+}
+
+#team .image-wrapper .image-caption {
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    background-color: #2e4a5b;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+#team .general_information .desc{
+    height: 105px;
+    padding: 21px 28px;
+}
+
+#team .general_information .social-btns{
+    height: 56px;
+}
+
+#team .general_information .social-btns div:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#team .general_information .social-btns div{
+    display: inline-block;
+    height: inherit;
+    color: #252726;
+    float: left;
+    width: 25%;
+    font-size: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#team .general_information .social-btns div {
+    background-color: #2e4a5b;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+}
+#team .general_information .social-btns div:first-child {
+    border-left:0;
+}
+#team .general_information .social-btns div:last-child {
+    border-right:0;
+}
+#team .general_information .social-btns div:hover {
+    background-color: #18cfab;
+}
+
+/*Стили для компонента Achievements*/
+#numbers .row>div:nth-child(2n) {
+    background: #18cfab;
+    border: solid #1c2a33;
+    border-width: 8px 0 0;
+}
+#numbers .row>div:nth-child(2n-1) {
+    background: #1c2a33;
+    border: solid #18cfab;
+    border-width: 8px 0 0;
+}
+#numbers .row>div {
+    height:370px;
+    padding-top: 70px;
+    padding-bottom: 110px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.icon-wrapper:after {
+    content: '';
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -53px 0 0 -53px;
+}
+.icon-wrapper {
+    height:165px;
+    width:165px;
+    border-radius: 50%;
+    position:relative;
+    left: 50%;
+    margin-left:-83px;
+}
+.icon-wrapper span {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    left: 50%;
+    margin: -20px;
+    font-size: 40px;
+    width:40px;
+}
+#numbers .row>div:nth-child(2n) .icon-wrapper {
+    border: 1px solid #1c2a33;
+}
+#numbers .row>div:nth-child(2n-1) .icon-wrapper {
+    border: 1px solid #18cfab;
+}
+#numbers .row>div:nth-child(2n) .icon-wrapper:after {
+    background: #1c2a33;
+}
+#numbers .row>div:nth-child(2n-1) .icon-wrapper:after {
+    background: #18cfab;
+}

@@ -9,11 +9,11 @@ let services = [{id:0,title:"Web Design",src:"../img/1.png",description:"Lorem i
     {id:5,title:"Seo Service",src:"../img/1.png",description:"Duis feugiat consectetur lorem, non elementum massa fermentum sed. In facilisis tellus sem, sed pretium odio iaculis posuere. Praesent efficitur scelerisque justo, ornare viverra leo condimentum non. Aliquam libero justo, iaculis hendrerit erat ut, fermentum condimentum augue. Duis cursus ipsum rutrum mattis mattis. Praesent vulputate sapien semper magna aliquam, eget suscipit lacus mollis. Aenean ut purus quam. Sed ex orci, aliquet et orci vitae, scelerisque ullamcorper dui. Sed eu ipsum nec dolor venenatis cursus ut quis leo."}];
 let teamdata = ['{"name": "John Doe", "position": "Graphic Designer"}', '{"name": "John Doe", "position": "Graphic Designer"}', '{"name": "John Doe", "position": "Graphic Designer"}', '{"name": "John Doe", "position": "Graphic Designer"}'];
 let team = [];
-let achievements = [{icon: 'src/img/1.png', max: 4609, title: 'Works' }, {icon: 'src/img/2.png', max: 3470, title: 'Customers' }, {icon: 'src/img/3.png', max: 2908, title: 'Purchase' }, {icon: 'src/img/4.png', max: 1908, title: 'Office' }];
+
 for(let i = 0; i < teamdata.length; i++) {
     team[i] = JSON.parse(teamdata[i])
 }
-const appReducer = (state={services, team, achievements}, action) => {
+const appReducer = (state={services, team}, action) => {
     switch (action.type) {
         default:
             return state;

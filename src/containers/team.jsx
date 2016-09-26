@@ -9,7 +9,7 @@ var Member = require('../components/member.jsx');
 
 class Team extends React.Component {
     render() {
-        return (<div className="container-fluid text-center">
+        return (<div className="container-fluid text-center" id="team">
             <div className="wrapper">
                 <div className="title">
                     <p>Meet Our Team</p>
