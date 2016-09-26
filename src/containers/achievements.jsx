@@ -33,8 +33,8 @@ class Achievements extends React.Component {
     }
 
     render() {
-        console.log(this.props.achievements);
-        console.log(this.props.achievements[0].currentValue);
+        console.log(this.props.achievements);//Возвращает обновленный state
+        console.log(this.props.achievements[0].currentValue); //При прямом обращении возвращает 0
         return (
             <div className="container-fluid reverse text-center" id="numbers">
                 <div className="row">
