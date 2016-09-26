@@ -33,10 +33,10 @@ class Header extends React.Component {
             </div>
             <div className="container-fluid options">
                 <div className="row text-center">
-                    <div className="col-md-3"><div className="image_wrapper"><img src="src/img/pers_opt.png" /></div><div>PERSONALIZED OPTIONS</div></div>
-                    <div className="col-md-3"><div className="image_wrapper"><img src="src/img/full_cust.png" /></div><div>FULLY CUSTOMIZABLE</div></div>
-                    <div className="col-md-3"><div className="image_wrapper"><img src="src/img/unl_supp.png" /></div><div>UNLIMITED SUPPORT</div></div>
-                    <div className="col-md-3"><div className="image_wrapper"><img src="src/img/resp_dev.png" /></div><div>RESPONSIBLE ALL DEVICE</div></div>
+                    <div className="col-md-3 col-sm-6"><div className="image_wrapper"><img src="src/img/pers_opt.png" /></div><div>PERSONALIZED OPTIONS</div></div>
+                    <div className="col-md-3 col-sm-6"><div className="image_wrapper"><img src="src/img/full_cust.png" /></div><div>FULLY CUSTOMIZABLE</div></div>
+                    <div className="col-md-3 col-sm-6"><div className="image_wrapper"><img src="src/img/unl_supp.png" /></div><div>UNLIMITED SUPPORT</div></div>
+                    <div className="col-md-3 col-sm-6"><div className="image_wrapper"><img src="src/img/resp_dev.png" /></div><div>RESPONSIBLE ALL DEVICE</div></div>
                 </div>
             </div>
         </div>)

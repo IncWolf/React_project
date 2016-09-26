@@ -136,9 +136,8 @@ span.green {color: #18cfab;}
 }
 .servicetabs>a>div {
     display: inline-block;
-    width: 180px;
     height: 72px;
-    padding: 25px 0;
+    padding: 25px 15px;
     font-size: 17px;
     background: #f8fcfe;
     color: rgb(113,113,113);
@@ -223,6 +222,14 @@ span.green {color: #18cfab;}
 }
 .progress-bar.brown {
     background-color: #bb8a36;
+}
+
+@media (min-width: 992px) {
+    #company .menu>li {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
 }
 
 /*Стили для компонента Portfolio*/
@@ -386,4 +393,44 @@ span.green {color: #18cfab;}
 }
 #numbers .row>div:nth-child(2n-1) .icon-wrapper:after {
     background: #18cfab;
+}
+
+/*Стили для компонента News */
+#news .image-wrapper {
+    height: 300px;
+    position: relative;
+    background: #9e9e9e;
+    margin: 10px 0;
+}
+
+#news .image-caption.date {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #203e38;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#news .image-caption.desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f8fcfe;
+    height: 68px;
+    padding: 23px;
+    color: #717171;
+}
+
+#news .image-caption p {
+    margin: 0;
+}
+
+@media (min-width: 687px) {
+    #news .col-md-3.col-sm-6 {
+        width: 50%;
+        display: inline-block;
+    }
+
 }
